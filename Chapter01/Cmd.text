@@ -1,0 +1,17 @@
+
+😰 CMD 작성 요령
+javac 실행을 위한 JDK(Java Development Kit)의 bin 경로 : D:\Coding\Microsoft\jdk-17.0.3.7-hotspot\bin
+Chapter01의 경로 : D:\Coding\tutorial\book--java-basics\Chapter01
+
+javac 실행에 편리를 위한 환경변수 설정 : 
+시작 -- 앱(설정) -- 시스템 -- 정보 -- 고급 시스템 설정 -- 환경변수
+/ 변수 : PATH 작명 / 값 : 위의 JDK의 bin 경로로 D:\Coding\Microsoft\jdk-17.0.3.7-hotspot\bin
+
+😰 Hello.java Comfile, Hello.bc로 Binary Code 보기
+D:\Coding\tutorial\book--java-basics\Chapter01>javac -encoding utf-8 Hello.java
+D:\Coding\tutorial\book--java-basics\Chapter01>javap -c Hello > Hello.bc
+
+😰 Hello2030 Comfile, class 파일 확인, 실행
+D:\Coding\tutorial\book--java-basics\Chapter01>javac -encoding urf-8 Hello2030.java
+D:\Coding\tutorial\book--java-basics\Chapter01>dir Hello2030.*
+D:\Coding\tutorial\book--java-basics\Chapter01>java Hello2030
